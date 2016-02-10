@@ -6,6 +6,41 @@ body{
 	background-color: #091a44;
 	color: #e1e1e1; 
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
+	font-size: 14px;
 }
 /*-------------------Header------------------------------*/
+header .navbar-default{
+	background: rgba(9, 26, 68, 0.8);
+	border-bottom: none;
+}
+header .navbar-default .navbar-nav > li > a{
+	color: #ffd866;
+}
+header .navbar-brand, 
+header .navbar-nav > li > a{
+	color: #ffd866;
+	text-shadow: none;
+}
+header .navbar-default .navbar-nav>li>a:focus,
+header .navbar-default .navbar-nav>li>a:hover{
+	color: #091a44;
+	background: #ffd866;
+	transition: background 500ms, color 500ms;
+}
+header .navbar-nav > li > a{
+	padding: 35px 10px;
+}
+@media screen and (max-width: 768px){
+	header .navbar-nav > li > a{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+}
+header .navbar-fixed-top .navbar-collapse{
+	max-height: 400px;
+}
+.navbar-brand{
+	height: auto;
+	padding: 5px 15px;
+}
