@@ -14,6 +14,11 @@ $(document).ready(function() {
   ]
   });
 
+  $('#navbar').scrollspy();
+  
   $('#home').height($(window).height());
   $('#home').width($(window).width());
+  $('#about').height($(document).height());
+  $('#about').width($(document).width());
+  
 })
