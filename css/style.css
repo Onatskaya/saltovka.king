@@ -30,7 +30,7 @@ header .navbar-default .navbar-nav>li>a:hover{
 header .navbar-nav > li > a{
 	padding: 35px 10px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
 	header .navbar-nav > li > a{
 		padding-top: 5px;
 		padding-bottom: 5px;
@@ -43,4 +43,42 @@ header .navbar-fixed-top .navbar-collapse{
 .navbar-brand{
 	height: auto;
 	padding: 5px 15px;
+}
+header pre{
+	background: transparent;
+	overflow: visible;
+	border: none;
+	color: #e1e1e1;
+	font: 0.8em Arial;
+	text-transform: uppercase;
+	position: relative;
+	margin-left: -27px;
+	margin-top: 5px;
+	float: left;
+}
+@media screen and (max-width: 1199px){
+	header pre{
+		display: none;
+	}
+}
+header .navbar-header{
+	position: relative;
+}
+header .navbar-default .navbar-collapse,
+header .navbar-default .navbar-form{
+	border: none;
+}
+header .navbar-default .navbar-toggle .icon-bar{
+	background: #ffd866;
+}
+header .navbar-default .navbar-toggle{
+	border-color: #ffd866;
+}
+header .navbar-default .navbar-toggle:hover,
+header .navbar-default .navbar-toggle:focus{
+	background: #ffd866;
+}
+header .navbar-default .navbar-toggle:hover .icon-bar,
+header .navbar-default .navbar-toggle:focus .icon-bar{
+	background: #091a44;
 }
