@@ -8,6 +8,12 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 }
+*,
+*:hover,
+*:active,
+*:focus{
+	outline: none;
+}
 /*-------------------Header------------------------------*/
 header .navbar-default{
 	background: rgba(9, 26, 68, 0.8);
@@ -82,3 +88,42 @@ header .navbar-default .navbar-toggle:hover .icon-bar,
 header .navbar-default .navbar-toggle:focus .icon-bar{
 	background: #091a44;
 }
+
+/*----------------------Main---------------------------*/
+
+/*---------Home page ---------------*/
+
+#home{
+	background: url(../images/home_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+}
+#home_news{
+	margin-top: 30%; 
+}
+#home_news .slick-prev:before,
+#home_news .slick-next:after{
+	line-height: 0;
+}
+#home_news .slick-prev{
+	left: 0;
+	border: none;
+}
+#home_news .slick-next{
+	right: 0;
+	border: none;
+}
+#home_news .slick-list{
+	width: 74%;
+	margin: 0 auto;
+}
+#home_news p{
+	text-align: center;
+	font-size: 1.2em;
+}
+#home_news .news_title{
+	font-size: 1.8em;
+	color: #fbc115;
+	font-weight: bold;
+}
+/*----------------------------------*/
