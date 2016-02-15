@@ -40,7 +40,7 @@ header .navbar-default .navbar-nav>li>a:focus,
 header .navbar-default .navbar-nav>li>a:hover{
 	color: #091a44;
 	background: #ffd866;
-	transition: background 500ms, color 500ms;
+	transition: background 1000ms, color 1000ms;
 }
 header .navbar-nav > li > a{
 	padding: 35px 10px;
@@ -68,8 +68,10 @@ header pre{
 	text-transform: uppercase;
 	position: relative;
 	margin-left: -27px;
-	margin-top: 5px;
+	margin-top: 15px;
+	margin-bottom: 0;
 	float: left;
+	padding: 0;
 }
 @media screen and (max-width: 1199px){
 	header pre{
@@ -200,4 +202,81 @@ main{
 .club_info p{
 	font-size: 1.2em;
 }
+.club_info a{
+	display: block;
+	width: 60%;
+	margin: 5px auto;
+	background: transparent;
+	border: 2px solid #ffd866;
+	border-radius: 10px;
+	text-transform: uppercase;
+	padding: 5px;
+	color: #ffb866;
+	text-align: center;
+}
 /*-----------------------------------------------------*/
+/* ---------------------News Page----------------------*/
+#news{
+	background: url(../images/news_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/* @media screen and (max-width: 992px){
+	#news{
+		width: 100%!important;
+		height: 100%!important;
+	}
+} */
+@media screen and (max-width: 768px) and (orientation : landscape) {
+	#news .section_inner{
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation : portrait) {
+	#news .section_inner{
+		margin-top: 15%;
+	}
+}
+.grid figure h2 span{
+	font-size: 0.8em;
+	color: #fff;
+}
+
+/* -------------------------------------------------------*/
+/* ---------------------Vacancy Page----------------------*/
+
+#vacancy{
+	background: url(../images/vacancy_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+@media screen and (max-width: 992px){
+	#vacancy{
+		width: 100%!important;
+		height: 100%!important;
+	}
+}
+#vacancy .section_inner{
+	margin-top: 15%;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	#vacancy .section_inner{
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	#vacancy .section_inner{
+		margin-top: 20%;
+	}
+}
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+.vacancy_list a{
+	color: #ffd866;
+}
+.vacancy_list a:hover{
+	text-decoration: none;
+}
+/*---------------------------------------------------------*/

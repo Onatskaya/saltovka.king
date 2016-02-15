@@ -20,5 +20,9 @@ $(document).ready(function() {
   $('#home').width($(window).width());
   $('#about').height($(document).height());
   $('#about').width($(document).width());
+  $('#news').height($(document).height());
+  $('#news').width($(document).width());
+  $('#vacancy').height($(document).height());
+  $('#vacancy').width($(document).width());
   
 })
