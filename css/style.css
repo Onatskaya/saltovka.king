@@ -22,6 +22,10 @@ h5,
 h6{
 	color: #ffd866;
 }
+ul{
+	list-style: none;
+	margin: auto;
+}
 /*-------------------Header------------------------------*/
 
 header .navbar-default{
@@ -261,17 +265,20 @@ main{
 }
 @media screen and (max-width: 768px) and (orientation: landscape) {
 	#vacancy .section_inner{
-		margin-top: 20%;
+		margin-top: 15%;
 	}
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
 	#vacancy .section_inner{
-		margin-top: 20%;
+		margin-top: 30%;
 	}
 }
 h1{
 	text-align: center;
 	text-transform: uppercase;
+}
+.vacancy_list li{
+	list-style: disc;
 }
 .vacancy_list a{
 	color: #ffd866;
@@ -280,3 +287,28 @@ h1{
 	text-decoration: none;
 }
 /*---------------------------------------------------------*/
+/* ----------------------------Rulls Page ------------------*/
+
+#rulls{
+	background: url(../images/rulls_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#rulls .section_inner{
+	margin-top: 15%;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	#rulls .section_inner{
+		margin-top: 15%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	#rulls .section_inner{
+		margin-top: 30%;
+	}
+}
+
+#rulls ul li{
+	margin: 10px 0;
+}
+/*-------------------------------------------------------------*/

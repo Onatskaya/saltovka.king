@@ -24,5 +24,7 @@ $(document).ready(function() {
   $('#news').width($(document).width());
   $('#vacancy').height($(document).height());
   $('#vacancy').width($(document).width());
+  $('#rulls').height($(document).height());
+  $('#rulls').width($(document).width());
   
 })
