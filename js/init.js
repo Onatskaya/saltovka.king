@@ -26,5 +26,9 @@ $(document).ready(function() {
   $('#vacancy').width($(document).width());
   $('#rulls').height($(document).height());
   $('#rulls').width($(document).width());
+
+  $( "#prices_accordion" ).accordion({
+      collapsible: true
+    });
   
 })

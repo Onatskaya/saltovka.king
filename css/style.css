@@ -26,6 +26,9 @@ ul{
 	list-style: none;
 	margin: auto;
 }
+section{
+	overflow: hidden;
+}
 /*-------------------Header------------------------------*/
 
 header .navbar-default{
@@ -164,6 +167,16 @@ main{
 	font-weight: bold;
 }
 /*----------------------------------*/
+/*---------------Prices section ---------------*/
+
+#prices{
+	background: url(../images/prices_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 50px 0;
+}
+
+/*--------------------------------------------*/
 /*------------------- About Page -------------------*/
 
 #about{
