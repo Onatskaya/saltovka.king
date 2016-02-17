@@ -28,7 +28,8 @@ $(document).ready(function() {
   $('#rulls').width($(document).width());
 
   $( "#prices_accordion" ).accordion({
-      collapsible: true
-    });
+    heightStyle: "content",
+    collapsible: true
+  });
   
 })
