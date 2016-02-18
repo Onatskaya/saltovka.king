@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  /* Новости на главной */
   $('#home_news').slick({
   	responsive: [
     {
@@ -14,6 +15,7 @@ $(document).ready(function() {
   ]
   });
 
+  /* Навигация */
   $('#navbar').scrollspy();
   
   $('#home').height($(window).height());
@@ -27,9 +29,12 @@ $(document).ready(function() {
   $('#rulls').height($(document).height());
   $('#rulls').width($(document).width());
 
+  /* Цены */
   $( "#prices_accordion" ).accordion({
     heightStyle: "content",
     collapsible: true
   });
   
+  /* Галерея */
+  $('#photo_gallery').photobox('a',{ time:0 });
 })
