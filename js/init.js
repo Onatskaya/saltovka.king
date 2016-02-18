@@ -34,6 +34,13 @@ $(document).ready(function() {
     heightStyle: "content",
     collapsible: true
   });
+
+    /* Расписание */
+  $( "#schedule_accordion" ).accordion({
+    heightStyle: "content",
+    collapsible: true,
+    active: false
+  });
   
   /* Галерея */
   $('#photo_gallery').photobox('a',{ time:0 });
