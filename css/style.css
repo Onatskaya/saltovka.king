@@ -166,6 +166,13 @@ main{
 	color: #fbc115;
 	font-weight: bold;
 }
+#home_news .slick-dots{
+	bottom: -30px;
+}
+#home_news .slick-dots li{
+	border: 1px solid #fbc115;
+	border-radius: 50%;
+}
 /*----------------------------------*/
 /*---------------Prices section ---------------*/
 
@@ -174,6 +181,10 @@ main{
 	background-size: cover;
 	background-attachment: scroll;
 	padding: 50px 0;
+}
+#prices_accordion{
+	margin-top: 5em;
+	margin-bottom: 5em;
 }
 #prices_accordion p{
 	margin: 10px 0;
