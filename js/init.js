@@ -28,22 +28,53 @@ $(document).ready(function() {
   $('#vacancy').width($(document).width());
   $('#rulls').height($(document).height());
   $('#rulls').width($(document).width());
+  /*$('#couches').height($(document).height());
+  $('#couches').width($(document).width());*/
 
   /* Цены */
   $( "#prices_accordion" ).accordion({
-    heightStyle: "content",
-    collapsible: true
+      heightStyle: "content",
+      collapsible: true
   });
 
     /* Расписание */
   $( "#schedule_accordion" ).accordion({
-    heightStyle: "content",
-    collapsible: true,
-    active: false
+      heightStyle: "content",
+      collapsible: true,
+      active: false
   });
   
   /* Галерея */
   $('#photo_gallery').photobox('a',{ time:0 });
+
+  /* Слайдер тренеров */
+  $('#couches_slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
+  });
 
   /* Гугл карта */
     google_maps(); // Load google maps onload page

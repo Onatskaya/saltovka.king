@@ -421,6 +421,74 @@ a.toMaselskogo{
 }
 
 /* -------------------------------------------------------*/
+/* ---------------------Couches Page----------------------*/
+#couches{
+	background: url(../images/rulls_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%!important;
+		height: 100%!important;
+}
+/* @media screen and (max-width: 992px){
+	#couches{
+		width: 100%!important;
+		height: 100%!important;
+	}
+} */
+@media screen and (max-width: 768px) and (orientation : landscape) {
+	#couches .section_inner{
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation : portrait) {
+	#couches .section_inner{
+		margin-top: 35%;
+	}
+}
+#couches_slider{
+	margin-top: 20%;
+}
+#couches_slider img{
+	height: 330px;
+	display: block;
+	margin: 10px auto;
+}
+#couches_slider .slick-prev{
+	left: -100px;
+	border: none;
+	top: 30%;
+}
+#couches_slider .slick-next{
+	right: -100px;
+	border: none;
+	top: 30%;
+}
+#couches_slider a{
+	text-decoration: none;
+}
+#couches_slider .couch_name, 
+#couches_slider p{
+	text-align: center;
+	text-transform: uppercase;
+}
+#couches_slider p{
+	color: #e1e1e1;
+}
+#couches_slider .couch_name{
+	color: #fbc115;
+	font-size: 1.2em;
+}
+#couches_slider .slick-dots{
+	bottom: -30px;
+}
+#couches_slider .slick-dots li{
+	border: 1px solid #fbc115;
+	border-radius: 50%;
+}
+.slick-active{
+	border-color: #e1e1e1!important;
+}
+/* -------------------------------------------------------*/
 /* ---------------------Vacancy Page----------------------*/
 
 #vacancy{
