@@ -44,4 +44,44 @@ $(document).ready(function() {
   
   /* Галерея */
   $('#photo_gallery').photobox('a',{ time:0 });
+
+  /* Гугл карта */
+    google_maps(); // Load google maps onload page
+
+          function google_maps() {
+            var latlng = new google.maps.LatLng(50.032145, 36.356553);
+            var settings = {
+                zoom: 16,
+                center: latlng,
+                mapTypeControl: false,
+                mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                scrollwheel: false,
+                disableDoubleClickZoom: true,
+                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map"), settings);
+            var myLatlng = new google.maps.LatLng(50.032145, 36.356553);
+            
+            var myOptions = {
+                zoom: 16,
+                center: myLatlng,
+                scrollwheel: false,
+                disableDoubleClickZoom: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            // Создаем и размещаем маркер на карте
+
+            var marker = new google.maps.Marker({  
+              position: new google.maps.LatLng(50.032145, 36.356553),  
+              map: map,  
+              title: 'Фитнес-центр King',  
+              clickable: false,  
+              scrollwheel: false,
+              icon: 'marker_icon.png' 
+            }); 
+        };
+
+
 })

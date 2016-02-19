@@ -237,6 +237,103 @@ main{
 }
 
 /* ------------------------------------------------ */
+/* ------------------Contacts section ---------------- */
+
+#contacts{
+	background: url(../images/contacts_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 8em 0;
+}
+#map{
+	width: 80%;
+	margin: auto;
+	height: 450px;
+}
+.location_info{
+	padding-top: 3em;
+}
+#contacts p{
+	font-size: 1.2em;
+}
+#contacts p.adress{
+	font-size: 1em;
+}
+.tel{
+	padding-left: 2.4em;
+}
+#contacts a{
+	color: #e1e1e1;
+	text-decoration: none;
+	font-size: 1.2em;
+	display: block;
+}
+a.toMaselskogo{
+	padding: 10px 15px;
+	background: #fbc115;
+	border-radius: 20px;
+	color: #091a44!important;
+	text-align: center;
+	margin: 10px 0;
+	width: 70%;
+	box-shadow: 0 0 10px #fbc115;
+}
+.socicons{
+	clear: both;
+	overflow: hidden;
+	width: 50%;
+	margin: auto;
+}
+.socicons a{
+	display: block;
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin: 10px 5px;
+}
+.vk{
+	background: url(../images/icons.png) no-repeat 0 0;
+}
+.vk:hover,
+.vk:active{
+	background: url(../images/icons.png) no-repeat 0 -70px;
+}
+.inst{
+	background: url(../images/icons.png) no-repeat -70px 0;
+}
+.inst:hover,
+.inst:active{
+	background: url(../images/icons.png) no-repeat -70px -70px;
+}
+@media screen and (max-width: 768px){
+	#contacts{
+		padding-bottom: 2em;
+	}
+	#map{
+		width: 100%;
+		margin: auto;
+		height: 300px;
+	}
+	#contacts p,
+	#contacts h4{
+		text-align: center;
+	}
+	#contacts a{
+		margin: auto
+		width: 100%;
+		text-align: center;
+	}
+	a.toMaselskogo{
+		margin: 10px auto;
+		width: 100%;
+	}
+	.socicons{
+		width: 120px;
+		margin: auto;
+	}
+}
+
+/* ---------------------------------------------------- */
 
 /*------------------- About Page -------------------*/
 
@@ -267,11 +364,6 @@ main{
 #video{
 	margin-top: 5em;
 }
-@media screen and (max-width: 768px){
-	#video{
-		margin-top: 0;
-	}
-}
 #video iframe{
 	width: 100%;
 	height: 26em;
@@ -291,6 +383,14 @@ main{
 	padding: 5px;
 	color: #ffb866;
 	text-align: center;
+}
+@media screen and (max-width: 768px){
+	#video{
+		margin-top: 0;
+	}
+	.club_info a{
+		width: 100%;
+	}
 }
 /*-----------------------------------------------------*/
 /* ---------------------News Page----------------------*/
@@ -327,6 +427,7 @@ main{
 	background: url(../images/vacancy_bg.jpg) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
+	padding-bottom: 3em;
 }
 @media screen and (max-width: 992px){
 	#vacancy{
