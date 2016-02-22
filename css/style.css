@@ -29,6 +29,10 @@ ul{
 section{
 	overflow: hidden;
 }
+a:hover,
+a:active{
+	outline: none;
+}
 /*-------------------Header------------------------------*/
 
 header .navbar-default{
@@ -555,3 +559,63 @@ h1{
 	margin: 10px 0;
 }
 /*-------------------------------------------------------------*/
+/* ----------------------theCouch Page------------------------- */
+
+#theCouch{
+	background: url(../images/theCouch_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#theCouch .section_inner{
+	margin-top: 10%;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	#theCouch .section_inner{
+		margin-top: 15%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	#theCouch .section_inner{
+		margin-top: 30%;
+	}
+}
+#theCouch img{
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+@media screen and (max-width: 768px){
+	#theCouch figure img{
+		width: 50%;
+	}
+}
+#theCouch figcaption{
+	text-transform: uppercase;
+	color: #fbc115;
+	font-size: 1.2857em;
+	font-weight: bold;
+	margin-top: 10px;
+}
+#theCouch .workout{
+	text-transform: uppercase;
+	font-size: 1.42857em;
+}
+#theCouch .theCouch-info{
+	font-size: 1.3571em;
+}
+#theCouch .photos a{
+	display: block;
+	float: left;
+	max-width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#theCouch .schedule{
+	text-transform: uppercase;
+	font-size: 1.42857em;
+	color: #fbc115;
+}
+.theCouch-schedule{
+	width: 60%;
+}
+/* ------------------------------------------------------------ */
