@@ -113,6 +113,8 @@ $(document).ready(function() {
             icon: 'marker_icon.png' 
         }); 
     };
+
+    
     
 });
   
