@@ -18,9 +18,10 @@ $(document).ready(function() {
   /* Навигация */
   $('#navbar').scrollspy();
   
+
   $('#home').height($(window).height());
   $('#home').width($(window).width());
-  $('#about').height($(document).height());
+  /*$('#about').height($(document).height());
   $('#about').width($(document).width());
   $('#news').height($(document).height());
   $('#news').width($(document).width());
@@ -28,12 +29,15 @@ $(document).ready(function() {
   $('#vacancy').width($(document).width());
   $('#rulls').height($(document).height());
   $('#rulls').width($(document).width());
-  /*$('#couches').height($(document).height());
-  $('#couches').width($(document).width());*/
-  $('#theCouch').height($(document).height());
-  $('#theCouch').width($(document).width());
 
-  /* Цены */
+  $('#theCouch').height($(document).height());
+  $('#theCouch').width($(document).width());*/
+
+
+
+
+
+/* Цены */
   $( "#prices_accordion" ).accordion({
       heightStyle: "content",
       collapsible: true
@@ -125,7 +129,12 @@ $(document).ready(function() {
         icon: 'marker_icon.png' 
       }); 
   };
-
   
 
-})
+
+});
+  
+  
+
+  
+  

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Kingfitness</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- jQuery UI -->
@@ -16,7 +17,8 @@
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<!-- Hover effects -->
 	<link rel="stylesheet" href="css/hover.css">
-
+	<!-- liCover -->
+	<link rel="stylesheet" href="css/liCover.css">
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -24,7 +26,7 @@
 
 </head>
 <body data-spy="scroll">
-	
+	<img src="images/theCouch_bg.jpg"  class="cover" alt="">
 	<header>
 		
 			<div class="row">
@@ -138,7 +140,18 @@
 	<script src="js/slick.min.js"></script>
 	<!-- GoogleMap -->
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script src="js/init.js"></script>
+	<!-- liCover -->
+	<script src="js/jquery.liCover.js"></script>
+	<script>
+		$(window).load(function(){
+		    $('.cover').liCover({
+		      parent: $(window),
+		      position:'fixed',
+		      veticalAlign:'middle',
+		      align:'center'
+		    });
+		});
+	</script>
 	<!-- Initialize all scripts -->
 	<script src="js/init.js"></script>
 </body>
