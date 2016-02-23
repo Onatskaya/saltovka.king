@@ -36,6 +36,44 @@ a:active{
 .fullsizeWrap{
 	z-index: -1;
 }
+/* ------------------ Prelouder ------------------------ */
+#page-preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right:0;
+	bottom:0;
+	background: #000 url(../images/logo.png) no-repeat center 10%;
+	z-index: 1035;
+}
+ 
+.contpre small{
+	font-size:25px;
+}
+ 
+.contpre{
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	left: 50%;top: 53%;
+	margin-left:-125px;
+	margin-top:-75px;
+	color:#fbc115;
+	font-size:40px;
+	letter-spacing:-2px;
+	text-align:center;
+	line-height:35px;
+}
+ 
+#page-preloader .spinner {
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	background: url(../images/circles.svg) center center no-repeat;
+	background-size:41px;    
+	margin: -16px 0 0 -16px;
+}
+/* ----------------------------------------------- */
 /*-------------------Header------------------------------*/
 
 header .navbar-default{
@@ -348,11 +386,6 @@ a.toMaselskogo{
 
 /*------------------- About Page -------------------*/
 
-/*#about{
-	background: url(../images/club_bg.jpg) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-}*/
 @media screen and (max-width: 992px){
 	#about{
 		width: 100%!important;
@@ -405,17 +438,7 @@ a.toMaselskogo{
 }
 /*-----------------------------------------------------*/
 /* ---------------------News Page----------------------*/
-/*#news{
-	background: url(../images/news_bg.jpg) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-}*/
-/* @media screen and (max-width: 992px){
-	#news{
-		width: 100%!important;
-		height: 100%!important;
-	}
-} */
+
 @media screen and (max-width: 768px) and (orientation : landscape) {
 	#news .section_inner{
 		margin-top: 20%;
@@ -433,19 +456,7 @@ a.toMaselskogo{
 
 /* -------------------------------------------------------*/
 /* ---------------------Couches Page----------------------*/
-/*#couches{
-	background: url(../images/rulls_bg.jpg) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%!important;
-		height: 100%!important;
-}*/
-/* @media screen and (max-width: 992px){
-	#couches{
-		width: 100%!important;
-		height: 100%!important;
-	}
-} */
+
 @media screen and (max-width: 768px) and (orientation : landscape) {
 	#couches .section_inner{
 		margin-top: 20%;
@@ -502,12 +513,6 @@ a.toMaselskogo{
 /* -------------------------------------------------------*/
 /* ---------------------Vacancy Page----------------------*/
 
-/*#vacancy{
-	background: url(../images/vacancy_bg.jpg) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-	padding-bottom: 3em;
-}*/
 @media screen and (max-width: 992px){
 	#vacancy{
 		width: 100%!important;
@@ -543,11 +548,7 @@ h1{
 /*---------------------------------------------------------*/
 /* ----------------------------Rulls Page ------------------*/
 
-/*#rulls{
-	background: url(../images/rulls_bg.jpg) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-}*/
+
 #rulls .section_inner{
 	margin-top: 15%;
 }
@@ -568,13 +569,6 @@ h1{
 /*-------------------------------------------------------------*/
 /* ----------------------theCouch Page------------------------- */
 
-/*#theCouch{
-	background: url(../images/theCouch_bg.jpg) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-}*/
 #theCouch .section_inner{
 	margin-top: 15%;
 }
