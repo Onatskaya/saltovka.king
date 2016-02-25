@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Kingfitness</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- jQuery UI -->
 	<link rel="stylesheet" href="css/jquery-ui.min.css">
-	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.schedule.css">
+	<!-- Photobox -->
+	<link rel="stylesheet" href="css/photobox.css">
+	<!-- SlickSlide -->
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<!-- Hover effects -->
+	<link rel="stylesheet" href="css/hover.css">
+	<!-- liCover -->
+	<link rel="stylesheet" href="css/liCover.css">
+
+
 	<link rel="stylesheet" href="css/style.css">
 
-	
 
 </head>
-<body>
-	
+<body data-spy="scroll">
+	<div id="page-preloader">
+		<div class="contpre">
+			<span class="spinner"></span>
+			<br>Подождите<br>
+			<small>идет загрузка</small>
+		</div>
+	</div>
 	<header>
-		<div class="container">
+		
 			<div class="row">
-				<nav class="navbar navbar-default">
-				  <div class="container-fluid">
+				<nav class="navbar navbar-default navbar-fixed-top">
+				  <div class="container">
 				    <!-- Brand and toggle get grouped for better mobile display -->
 				    <div class="navbar-header">
 				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -31,58 +46,457 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-				      <a class="navbar-brand" href="#">Brand</a>
+				      <a class="navbar-brand logo" href="#"><img src="images/navlogo.png" height="75" width="101" alt="Kingfitness Saltovka"></a>
+				      <pre>ул. Гвардейцев Широнинцев 101/99
+		ТЦ "Экватор", 3-й этаж
+		(057) 7551535, 7551545
+	   		(063) 7309542 
+				      </pre>
 				    </div>
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-				        <li><a href="#">Link</a></li>
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">One more separated link</a></li>
-				          </ul>
-				        </li>
-				      </ul>
-				      <form class="navbar-form navbar-left" role="search">
-				        <div class="form-group">
-				          <input type="text" class="form-control" placeholder="Search">
-				        </div>
-				        <button type="submit" class="btn btn-default">Submit</button>
-				      </form>
 				      <ul class="nav navbar-nav navbar-right">
-				        <li><a href="#">Link</a></li>
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				          </ul>
-				        </li>
+				        <li><a href="#home">Главная</a></li>
+				        <li><a href="about.html">О клубе</a></li>
+				        <li><a href="news.html">Новости</a></li>
+				        <li><a href="#prices">Цены</a></li>
+				        <li><a href="#schedule">Расписание</a></li>
+				        <li><a href="#gallery">Галерея</a></li>
+				        <li><a href="couches.html">Наши тренеры</a></li>
+				        <li><a href="#">Схема залов</a></li>
+				        <li><a href="vacancy.html">Вакансии</a></li>
+				        <li><a href="#contacts">Контакты</a></li>
 				      </ul>
 				    </div><!-- /.navbar-collapse -->
 				  </div><!-- /.container-fluid -->
 				</nav>
 			</div>
-		</div>
+		
 	</header>
+
+	<main>
+		<section id="home">
+			<div class="container">
+				<div id="home_news" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+					<div>
+						<p class="news_title">Дорогие друзья!</p>
+						<p>В фитнес-центре KING для Вас действует постоянная программа лояльности. Данная программа распространяется на безлимитные абонементы без тренера и с тренером. Программа действует с 01.11.2015 г.<br />
+						<a href="loyalty.html">Подробнее...</a></p>
+					</div>
+				</div>
+			</div>
+			  
+		</section>
+		
+		<section id="prices">
+			<div class="container">
+				<div id="prices_accordion" class="col-xs-12 col-md-6">
+				    <h3>ТРЕНАЖЕРНЫЙ ЗАЛ</h3>
+				    <div>
+				        <p>Разовое посещение самостоятельное - 70 грн</p>
+				        <p>Абонемент дневной с 11.00 до 16.00 (30 календарных дней) – 250 грн</p>
+				        <p>Абонемент на 8 посещений (30 календарных дней) – 270 грн </p>
+				        <p>Абонемент безлимитный (30 календарных дней) – 350 грн </p>
+				        <p>Абонемент студенческий безлимитный (30 календарных дней) – 250 грн (до 23-х лет включительно, при наличии студенческого билета)</p>
+				        <p>Абонемент выходного дня (30 календарных дней) – 200 грн</p>
+				        <p>Абонемент полугодовой – 1 месяц в подарок</p>
+				        <p>Абонемент годовой – 2 месяца в подарок </p>
+				    </div>
+				    <h3>ШКОЛЬНЫЕ АБОНЕМЕНТЫ</h3>
+				    <div>
+				        <p>(дети до 16-ти лет включительно, при наличии свидетельства о рождении или паспорта). </p>
+				        <p>Посещения ограничены периодом в будние дни с 8.00 до 18.00, в субботу с 8.00 до 18.00, в воскресенье с 10.00 до 18.00.</p>
+				        <p>Абонемент на 8 посещений (30 календарных дней) – 100 грн</p>
+				        <p>Абонемент безлимитный (30 календарных дней) – 200 грн</p>
+				    </div>
+				    <h3>АБОНЕМЕНТЫ С ТРЕНЕРОМ</h3>
+				    <div>
+				        <p>Абонемент безлимитный с персональным с тренером (30 календарных дней) – 1200 грн</p>
+				        <p>Абонемент на 8 персональных тренировок (безлимитный зал) – 1000 грн</p>
+				        <p>Абонемент на 8/8 персональных тренировок – 900 грн</p>
+				        <p>Абонемент на 8 консультативных тренировок (30 календарных дней) – 500 грн</p>
+				        <p>Абонемент безлимитный консультативный (30 календарных дней) – 700 грн</p>
+				        <p>Разовая персональная тренировка – 150 грн</p>
+				    </div>
+				    <h3>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h3>
+				    <div>
+				    	<p>Разовое посещение с консультацией тренера - 120 грн</p>
+				    	<p>Разработка индивидуальной программы - 150 грн</p>
+				    	<p>Разработка диетического питания – 150 грн</p>
+				    	<p>Аренда ячейки на месяц - 50 грн</p>
+				    	<p>Аренда полотенца – 15 грн</p>
+				    	<p>Продажа полотенца – 50 грн</p>
+				    	<p>Заморозка абонемента на 14 дней – 50 грн </p>
+				    	<p>Стоимость клубной карты - 10 грн</p>
+				    	<p>Настольный теннис - 40 грн/1 час</p>
+				    	<p>Солярий вертикальный - 5 грн/1 мин</p>
+				    	<p>Солярий горизонтальный - 5 грн/1 мин</p>
+				    </div>
+				    <h3>ГРУППОВЫЕ ЗАНЯТИЯ</h3>
+				    <div>
+				    	<p>Разовое посещение – 70 грн</p>
+				    	<p>Абонемент на 8 посещений (4 календарные недели) – 300 грн</p>
+				    	<p>Абонемент на 12 посещений (4 календарные недели) – 350 грн</p>
+				    	<p><b>Посещение групповых занятий и тренажерного зала в день тренировки</b></p>
+				    	<p>Абонемент на 8 посещений (4 календарные недели) – 400 грн</p>
+				    	<p>Абонемент на 12 посещений (4 календарные недели) – 450 грн</p>
+				    </div>
+				    <h3>ДЕТСКИЕ АБОНЕМЕНТЫ (до 13-ти лет включительно)</h3>
+				    <div>
+				    	<p>Разовое посещение – 40 грн</p>
+				    	<p>Абонемент на 8 посещений (4 календарные недели) – 220 грн</p>
+				    	<p>Абонемент на 12 посещений (4 календарные недели) – 270 грн</p>
+				    </div>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="schedule">
+			<div class="container">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<div id="schedule_accordion">
+						<h3>ФИТНЕС-МИКС Елена Стрижак</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 19.00</p>
+					    </div>
+					    <h3>ФИТНЕС-МИКС Светлана Лесная</h3>
+					    <div>
+					    	<p>ПН, Ср, Пт - 18.00</p>
+					    	<p>Вт, Чт - 19.00</p>
+					    	<p>Сб - 10.00</p>
+					    </div>
+					    <h3>БОДИ-ФИТНЕС Екатерина Крамчанина</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 09.00, 18.00, 19.00</p>
+					    	<p>Вт, Чт - 19.00</p>
+					    	<p>Сб - 16.00</p>
+					    </div>
+					    <h3>ФУНКЦИОНАЛЬНЫЙ ТРЕНИНГ TRX Светлана Лесная</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 19.00</p>
+					    	<p>Вт, Чт - 11.00, 20.00</p>
+					    </div>
+					    <h3>КАЛЛАНЕТИКА + СТРЕТЧИНГ Татьяна Пенцова</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 09.00</p>
+					    </div>
+					    <h3>ФУНКЦИОНАЛЬНЫЙ СТРЕТЧИНГ Татьяна Пенцова</h3>
+					    <div>
+					    	<p>Вт, Чт - 18.00</p>
+					    </div>
+					    <h3>АЭРОМИКС Татьяна Пенцова</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 20.00</p>
+					    </div>
+					    <h3>ПИЛАТЕС Оксана Гринченко</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 10.00, 18.00, 19.15</p>
+					    	<p>Пн, Пт - 20.15</p>
+					    	<p>Вт, Чт - 08.15, 09.15</p>
+					    	<p>Сб - 10.00</p>
+					    </div>
+					    <h3>ФЕЙСБИЛДИНГ Оксана Гринченко</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 19.00</p>
+					    </div>
+					    <h3>СТРИП-ПЛАСТИКА Мария Суббота</h3>
+					    <div>
+					    	<p>Вт, Чт - 19.00</p>
+					    	<p>Сб - 13.00</p>
+					    </div>
+					    <h3>ЙОГА Вадим Мальцев</h3>
+					    <div>
+					    	<p>Вт, Чт - 18.00</p>
+					    	<p></p>
+					    	<p></p>
+					    </div>
+					    <h3>БОКС Николай Мулин</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 09.00, 19.00</p>
+					    	<p>Вт, Чт - 20.00</p>
+					    	<p>Сб - 11.00</p>
+					    </div>
+					    <h3>СМЕШАННЫЕ ЕДИНОБОРСТВА + ВОЛЬНАЯ БОРЬБА Владимир Гринченко</h3>
+					    <div>
+					    	<p>Вт, Чт - 20.00</p>
+					    	<p>Сб - 13.00</p>
+					    </div>
+					    <h3>ММА, КИКБОКСИНГ Владимир Трефиловский</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 19.30</p>
+					    	<p>Вт, Чт - 18.30</p>
+					    	<p>Сб - 17.00</p>
+					    </div>
+					    <h3>ФИТНЕС-МИКС Елена Гончарова</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 09.30</p>
+					    	<p>Вт, Чт - 20.00</p>
+					    	<p>Сб - 10.00</p>
+					    </div>
+					    <h3>ФИТНЕС БЕЛЛИДАНС Ирина Хилько</h3>
+					    <div>
+					    	<p>Вт, Чт - 19.30</p>
+					    </div>
+					    <h3>СОМАТИКА Оксана Гринченко</h3>
+					    <div>
+					    	<p>Ср - 20.15</p>
+					    	<p>Сб - 11.00</p> 
+					    </div>
+					    <h3>ГИМНАСТИКА ДЛЯ БЕРЕМЕННЫХ Анна Несмеянова</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 16.00</p>
+					    </div>
+					    <h3>ДЕТСКАЯ ЙОГА, ДЕТСКИЙ ФИТНЕС (от 4 до 12 лет) Анна Несмеянова</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 17.00</p>
+					    </div>
+					    <h3>БОКС (от 8 лет) Николай Мулин</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 17.00</p>
+					    	<p>Сб - 11.00</p>
+					    </div>
+					    <h3>КУНГ-ФУ + КИКБОКСИНГ (от 7 до 14 лет) Владимир Трефиловский</h3>
+					    <div>
+					    	<p>Вт, Чт, Сб - 17.00</p>
+					    </div>
+					    <h3>ТАЙСКИЙ БОКС (от 5 лет) Дмитрий Пятницкий</h3>
+					    <div>
+					    	<p>Вт, Чт, Сб - 16.00</p>
+					    </div>
+					    <h3>БОКС (от 7 до 14 лет) Артем Макогоненко</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 16.00</p>
+					    </div>
+					    <h3>САМБО, ДЗЮДО (от 7 до 12 лет) Станислав Тростянский</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 18.00</p>
+					    </div>
+					    <h3>УШУ (от 4 до 17 лет) Андрей Тымбай</h3>
+					    <div>
+					    	<p>Вт, Чт - 16.00, 17.00, 18.30</p>
+					    	<p>Сб - 10.00, 11.30</p>
+					    </div>
+					    <h3>АЙКИДО ЕСИНКАН (от 4 до 14 лет)</h3>
+					    <div>
+					    	<p>Пн, Ср, Пт - 17.00</p>
+					    </div>
+					    <h3>СОВРЕМЕННЫЕ ТАНЦЫ (от 4 до 15 лет) Алиса Сиренко</h3>
+					    <div>
+					    	<p>Вт, Чт - 17.00, 18.00</p>
+					    	<p>Сб - 13.00</p>
+					    </div>
+					    <h3>ХИП-ХОП (от 8 до 14 лет) Анна Маякова</h3>
+					    <div>
+					    	<p>Вт, Чт, Сб - 16.00</p>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="gallery">
+			<div class="container">
+				<div id='photo_gallery'>
+				    <a href="images/gallery/1.jpg">
+				        <img src="images/gallery/1.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/2.jpg">
+				        <img src="images/gallery/2.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/3.jpg">
+				        <img src="images/gallery/3.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/4.jpg">
+				        <img src="images/gallery/4.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/5.jpg">
+				        <img src="images/gallery/5.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/6.jpg">
+				        <img src="images/gallery/6.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/7.jpg">
+				        <img src="images/gallery/7.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/8.jpg">
+				        <img src="images/gallery/8.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/9.jpg">
+				        <img src="images/gallery/9.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/10.jpg">
+				        <img src="images/gallery/10.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/11.jpg">
+				        <img src="images/gallery/11.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/12.jpg">
+				        <img src="images/gallery/12.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/13.jpg">
+				        <img src="images/gallery/13.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/14.jpg">
+				        <img src="images/gallery/14.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/15.jpg">
+				        <img src="images/gallery/15.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/16.jpg">
+				        <img src="images/gallery/16.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/17.jpg">
+				        <img src="images/gallery/17.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/18.jpg">
+				        <img src="images/gallery/18.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/19.jpg">
+				        <img src="images/gallery/19.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/20.jpg">
+				        <img src="images/gallery/20.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/21.jpg">
+				        <img src="images/gallery/21.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/22.jpg">
+				        <img src="images/gallery/22.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/23.jpg">
+				        <img src="images/gallery/23.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/24.jpg">
+				        <img src="images/gallery/24.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/25.jpg">
+				        <img src="images/gallery/25.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/26.jpg">
+				        <img src="images/gallery/26.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/27.jpg">
+				        <img src="images/gallery/27.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/28.jpg">
+				        <img src="images/gallery/28.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/29.jpg">
+				        <img src="images/gallery/29.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/30.jpg">
+				        <img src="images/gallery/30.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/31.jpg">
+				        <img src="images/gallery/31.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/32.jpg">
+				        <img src="images/gallery/32.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/33.jpg">
+				        <img src="images/gallery/33.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/34.jpg">
+				        <img src="images/gallery/34.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/35.jpg">
+				        <img src="images/gallery/35.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/36.jpg">
+				        <img src="images/gallery/36.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/37.jpg">
+				        <img src="images/gallery/37.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/38.jpg">
+				        <img src="images/gallery/38.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/39.jpg">
+				        <img src="images/gallery/39.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/40.jpg">
+				        <img src="images/gallery/40.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/41.jpg">
+				        <img src="images/gallery/41.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/42.jpg">
+				        <img src="images/gallery/42.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/43.jpg">
+				        <img src="images/gallery/43.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/44.jpg">
+				        <img src="images/gallery/44.jpg" alt="">
+				    </a>
+				    <a href="images/gallery/45.jpg">
+				        <img src="images/gallery/45.jpg" alt="">
+				    </a>
+				</div>
+			</div>
+		</section>
+
+		<section id="contacts">
+			<div class="container">
+				<div class="col-xs-12 col-sm-6">
+					<div id="map"></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 location_info">
+					<h4>РАСПИСАНИЕ РАБОТЫ ФИТНЕС-ЦЕНТРА</h4>
+					<p>Понедельник - Суббота: 08.00 - 22.00</p>
+					<p>Воскресенье: 09.00 - 20.00</p>
+					<p>КОНТАКТЫ</p>
+					<p class="adress">Адрес: г.Харьков, ул.Гвардейцев Широнинцев, 101/99,<br />ТЦ "Экватор", 3-й этаж</p>
+					<p>Тел: (057) 7551535</p>
+					<p class="tel">(057) 7551545</p>
+					<p class="tel">(063) 7309542</p>
+					<a href="mailto:kingfitness_14@mail.ru">E-mail: kingfitness_14@mail.ru</a>
+					<a href="http://maselskogo.kingfitness.com.ua" target="_blank" class="toMaselskogo">Перейти на сайт King Maselskogo</a>
+					<div class="socicons">
+						<a href="http://vk.com/kingfitness" target="_blank" class="vk"></a>
+						<a href="http://instagram.com/kingfitnessclub" target="_blank" class="inst"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
 	<!-- JS Scripts -->
 	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-scrollspy.js"></script>
+	<!-- JQuery UI -->
 	<script src="js/jquery-ui.min.js"></script>
+	<!-- Photobox -->
+	<script src="js/jquery.photobox.js"></script>
+	<!-- SlickSlide -->
+	<script src="js/slick.min.js"></script>
+	<!-- GoogleMap -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!-- liCover -->
+	<script src="js/jquery.liCover.js"></script>
+	<script>
+		$(window).load(function(){
+		    $('.cover').liCover({
+		      parent: $(window),
+		      position:'fixed',
+		      veticalAlign:'middle',
+		      align:'center'
+		    });
+		});
+	</script>
+	<script type="text/javascript">
+		$(window).on('load', function () {
+		    var $preloader = $('#page-preloader'),
+		        $spinner   = $preloader.find('.spinner');
+		    	$spinner.fadeOut();
+		    	$preloader.delay(500).fadeOut('slow');
+		});
+	</script>
+	<script src="js/init.js"></script>
 </body>
 </html>

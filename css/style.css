@@ -1,11 +1,647 @@
 html,
 body{
-	height: 100%;
+	//height: 100%;
 }
 body{
 	background-color: #091a44;
 	color: #e1e1e1; 
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+*,
+*:hover,
+*:active,
+*:focus{
+	outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	color: #fbc115;
+}
+ul{
+	list-style: none;
+	margin: auto;
+}
+section{
+	overflow: hidden;
+}
+a:hover,
+a:active{
+	outline: none;
+}
+.fullsizeWrap{
+	z-index: -1;
+}
+/* ------------------ Prelouder ------------------------ */
+#page-preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right:0;
+	bottom:0;
+	background: #000 url(../images/logo.png) no-repeat center 10%;
+	z-index: 1035;
+}
+ 
+.contpre small{
+	font-size:25px;
+}
+ 
+.contpre{
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	left: 50%;top: 53%;
+	margin-left:-125px;
+	margin-top:-75px;
+	color:#fbc115;
+	font-size:40px;
+	letter-spacing:-2px;
+	text-align:center;
+	line-height:35px;
+}
+ 
+#page-preloader .spinner {
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	background: url(../images/circles.svg) center center no-repeat;
+	background-size:41px;    
+	margin: -16px 0 0 -16px;
+}
+/* ----------------------------------------------- */
+/*-------------------Header------------------------------*/
+
+header .navbar-default{
+	background: rgba(9, 26, 68, 0.8);
+	border-bottom: none;
+}
+header .navbar-default .navbar-nav > li > a{
+	color: #fbc115;
+}
+header .navbar-brand, 
+header .navbar-nav > li > a{
+	color: #fbc115;
+	text-shadow: none;
+}
+header .navbar-default .navbar-nav>li>a:focus,
+header .navbar-default .navbar-nav>li>a:hover{
+	color: #091a44;
+	background: #fbc115;
+	transition: background 1000ms, color 1000ms;
+}
+header .navbar-nav > li > a{
+	padding: 35px 10px;
+}
+@media screen and (max-width: 992px){
+	header .navbar-nav > li > a{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+}
+header .navbar-fixed-top .navbar-collapse{
+	max-height: 400px;
+}
+.navbar-brand{
+	height: auto;
+	padding: 5px 15px;
+}
+header pre{
+	background: transparent;
+	overflow: visible;
+	border: none;
+	color: #e1e1e1;
+	font: 0.8em Arial;
+	text-transform: uppercase;
+	position: relative;
+	margin-left: -27px;
+	margin-top: 15px;
+	margin-bottom: 0;
+	float: left;
+	padding: 0;
+}
+@media screen and (max-width: 1199px){
+	header pre{
+		display: none;
+	}
+}
+header .navbar-header{
+	position: relative;
+}
+header .navbar-default .navbar-collapse,
+header .navbar-default .navbar-form{
+	border: none;
+}
+header .navbar-default .navbar-toggle .icon-bar{
+	background: #fbc115;
+}
+header .navbar-default .navbar-toggle{
+	border-color: #fbc115;
+}
+header .navbar-default .navbar-toggle:hover,
+header .navbar-default .navbar-toggle:focus{
+	background: #fbc115;
+}
+header .navbar-default .navbar-toggle:hover .icon-bar,
+header .navbar-default .navbar-toggle:focus .icon-bar{
+	background: #091a44;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+	background: #fbc115;
+}
+
+/*----------------------Main---------------------------*/
+
+main{
+	//height: 100%;
+}
+@media screen and (min-width: 600px){
+	main{
+		height: 100%;
+	}
+	#about{
+		height: 100%;
+	}
+}
+/*---------Home page ---------------*/
+
+#home{
+	background: url(../images/home_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+}
+@media screen and (max-width: 992px){
+	#home{
+		width: 100%!important;
+		height: 100%!important;
+	}
+}
+#home_news{
+	margin-top: 30%; 
+}
+#home_news .slick-prev:before,
+#home_news .slick-next:after{
+	line-height: 0;
+}
+#home_news .slick-prev{
+	left: 0;
+	border: none;
+}
+#home_news .slick-next{
+	right: 0;
+	border: none;
+}
+#home_news .slick-list{
+	width: 74%;
+	margin: 0 auto;
+}
+@media screen and (max-width: 767px){
+	#home_news .slick-list{
+		width: 96%;
+	}
+}
+#home_news p{
+	text-align: center;
+	font-size: 1.2em;
+}
+#home_news .news_title{
+	font-size: 1.8em;
+	color: #fbc115;
+	font-weight: bold;
+}
+#home_news .slick-dots{
+	bottom: -30px;
+}
+#home_news .slick-dots li{
+	border: 1px solid #fbc115;
+	border-radius: 50%;
+}
+#home_news p a{
+	color: #fbc115;
+	text-decoration: none;
+}
+/*----------------------------------*/
+/*---------------Prices section ---------------*/
+
+#prices{
+	background: url(../images/prices_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 5em 0;
+}
+#prices_accordion{
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+#prices_accordion p{
+	margin: 10px 0;
+}
+
+/*--------------------------------------------*/
+/* ---------------------Schedule section--------------------- */
+
+#schedule{
+	background: url(../images/schedule_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 10em 0;
+}
+#schedule_accordion h3{
+	text-align: center;
+}
+#schedule_accordion p{
+	margin: 10px auto;
+	text-align: center;
+}
+
+/* --------------------------------------------------------- */
+/* ----------------Photo Gallery------------------- */
+#gallery{
+	background: url(../images/gallery_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 50px 0;
+}
+#photo_gallery a img{
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 10px;
+	width: 12%;
+	box-sizing: border-box;
+	height: 100px;
+	overflow: hidden;
+}
+@media screen and (max-width: 768px){
+	#photo_gallery a img{
+		width: 25%;
+	}
+}
+
+/* ------------------------------------------------ */
+/* ------------------Contacts section ---------------- */
+
+#contacts{
+	background: url(../images/contacts_bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 8em 0;
+}
+#map{
+	width: 80%;
+	margin: auto;
+	height: 450px;
+}
+.location_info{
+	padding-top: 3em;
+}
+#contacts p{
+	font-size: 1.2em;
+}
+#contacts p.adress{
 	font-size: 1em;
 }
-/*-------------------Header------------------------------*/
+.tel{
+	padding-left: 2.4em;
+}
+#contacts a{
+	color: #e1e1e1;
+	text-decoration: none;
+	font-size: 1.2em;
+	display: block;
+}
+a.toMaselskogo{
+	padding: 10px 15px;
+	background: #fbc115;
+	border-radius: 20px;
+	color: #091a44!important;
+	text-align: center;
+	margin: 10px 0;
+	width: 70%;
+	box-shadow: 0 0 10px #fbc115;
+}
+.socicons{
+	clear: both;
+	overflow: hidden;
+	width: 50%;
+	margin: auto;
+}
+.socicons a{
+	display: block;
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin: 10px 5px;
+}
+.vk{
+	background: url(../images/icons.png) no-repeat 0 0;
+}
+.vk:hover,
+.vk:active{
+	background: url(../images/icons.png) no-repeat 0 -70px;
+}
+.inst{
+	background: url(../images/icons.png) no-repeat -70px 0;
+}
+.inst:hover,
+.inst:active{
+	background: url(../images/icons.png) no-repeat -70px -70px;
+}
+@media screen and (max-width: 768px){
+	#contacts{
+		padding-bottom: 2em;
+	}
+	#map{
+		width: 100%;
+		margin: auto;
+		height: 300px;
+	}
+	#contacts p,
+	#contacts h4{
+		text-align: center;
+	}
+	#contacts a{
+		margin: auto
+		width: 100%;
+		text-align: center;
+	}
+	a.toMaselskogo{
+		margin: 10px auto;
+		width: 100%;
+	}
+	.socicons{
+		width: 120px;
+		margin: auto;
+	}
+}
+
+/* ---------------------------------------------------- */
+
+/*------------------- About Page -------------------*/
+
+@media screen and (max-width: 992px){
+	#about{
+		width: 100%!important;
+		height: 100%!important;
+	}
+}
+.section_inner{
+	margin-top: 15%;
+}
+@media screen and (max-width: 768px) and (orientation : landscape) {
+	.section_inner{
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation : portrait) {
+	.section_inner{
+		margin-top: 35%;
+	}
+}
+#video{
+	margin-top: 5em;
+}
+#video iframe{
+	width: 100%;
+	height: 26em;
+	border: none;
+}
+.club_info p{
+	font-size: 1.2em;
+}
+.club_info a{
+	display: block;
+	width: 60%;
+	margin: 5px auto;
+	background: transparent;
+	border: 2px solid #fbc115;
+	border-radius: 10px;
+	text-transform: uppercase;
+	padding: 5px;
+	color: #ffb866;
+	text-align: center;
+}
+@media screen and (max-width: 768px){
+	#video{
+		margin-top: 0;
+	}
+	.club_info a{
+		width: 100%;
+	}
+}
+/*-----------------------------------------------------*/
+/* ---------------------News Page----------------------*/
+
+@media screen and (max-width: 768px) and (orientation : landscape) {
+	#news .section_inner{
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation : portrait) {
+	#news .section_inner{
+		margin-top: 15%;
+	}
+}
+.grid figure h2 span{
+	font-size: 0.8em;
+	color: #fff;
+}
+
+/* -------------------------------------------------------*/
+/* ---------------------Couches Page----------------------*/
+
+@media screen and (max-width: 768px) and (orientation : landscape) {
+	#couches .section_inner{
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation : portrait) {
+	#couches .section_inner{
+		margin-top: 35%;
+	}
+}
+#couches_slider{
+	margin-top: 20%;
+}
+#couches_slider img{
+	height: 330px;
+	display: block;
+	margin: 10px auto;
+}
+#couches_slider .slick-prev{
+	left: -100px;
+	border: none;
+	top: 30%;
+}
+#couches_slider .slick-next{
+	right: -100px;
+	border: none;
+	top: 30%;
+}
+#couches_slider a{
+	text-decoration: none;
+}
+#couches_slider .couch_name, 
+#couches_slider p{
+	text-align: center;
+	text-transform: uppercase;
+}
+#couches_slider p{
+	color: #e1e1e1;
+}
+#couches_slider .couch_name{
+	color: #fbc115;
+	font-size: 1.2em;
+}
+#couches_slider .slick-dots{
+	bottom: -30px;
+}
+#couches_slider .slick-dots li{
+	border: 1px solid #fbc115;
+	border-radius: 50%;
+}
+.slick-active{
+	border-color: #e1e1e1!important;
+}
+/* -------------------------------------------------------*/
+/* ---------------------Vacancy Page----------------------*/
+
+@media screen and (max-width: 992px){
+	#vacancy{
+		width: 100%!important;
+		height: 100%!important;
+	}
+}
+#vacancy .section_inner{
+	margin-top: 15%;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	#vacancy .section_inner{
+		margin-top: 15%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	#vacancy .section_inner{
+		margin-top: 30%;
+	}
+}
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+.vacancy_list li{
+	list-style: disc;
+}
+.vacancy_list a{
+	color: #fbc115;
+}
+.vacancy_list a:hover{
+	text-decoration: none;
+}
+/*---------------------------------------------------------*/
+/* ----------------------------Rulls Page ------------------*/
+
+
+#rulls .section_inner{
+	margin-top: 15%;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	#rulls .section_inner{
+		margin-top: 15%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	#rulls .section_inner{
+		margin-top: 30%;
+	}
+}
+
+#rulls ul li{
+	margin: 10px 0;
+}
+/*-------------------------------------------------------------*/
+/* ----------------------theCouch Page------------------------- */
+
+#theCouch .section_inner{
+	margin-top: 15%;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	#theCouch .section_inner{
+		margin-top: 15%;
+	}
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	#theCouch .section_inner{
+		margin-top: 30%;
+	}
+}
+#theCouch img{
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+@media screen and (max-width: 768px){
+	#theCouch figure img{
+		width: 50%;
+	}
+}
+#theCouch figcaption{
+	text-transform: uppercase;
+	color: #fbc115;
+	font-size: 1.2857em;
+	font-weight: bold;
+	margin-top: 10px;
+}
+#theCouch .workout{
+	text-transform: uppercase;
+	font-size: 1.42857em;
+}
+#theCouch .theCouch-info{
+	font-size: 1.3571em;
+}
+#theCouch .photos a{
+	display: block;
+	float: left;
+	max-width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#theCouch .schedule{
+	text-transform: uppercase;
+	font-size: 1.42857em;
+	color: #fbc115;
+}
+.theCouch-schedule{
+	width: 60%;
+}
+/* ------------------------------------------------------------ */
+.colored{
+	color: #fbc115;
+}
+
+/* ---------------Схема залов --------------- */
+img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+.rooms{
+	margin-top: 1.5em;
+}
+.rooms a{
+	display: block;
+	color: #fbc115;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 2;
+}
