@@ -76,6 +76,36 @@ $(document).ready(function() {
         ]
     });
 
+
+    /*----------------------------Схема залов---------------------------------*/
+  
+    $("map area").on('mouseover', (function() {
+            var selector =  $(this).attr('href');
+            $("a[data-room=" + "'" + selector + "'" + "]" ).css('color', '#e1e1e1');
+        })
+    ).click(function(e) { e.preventDefault(); });
+    $("map area").on('mouseout', (function() {
+            var selector =  $(this).attr('href');
+            $("a[data-room=" + "'" + selector + "'" + "]" ).css('color', '#fbc115');
+        })
+    ).click(function(e) { e.preventDefault(); });
+    $('.rooms a').mouseover(function(e) {
+        var selector =  $(this).data('room');
+        $("area[href=" + "'" + selector + "'" + "]" ).mouseover();
+    }).mouseout(function(e) {
+        var selector =  $(this).data('room');
+        $("area[href=" + "'" + selector + "'" + "]" ).mouseout();
+    }).click(function(e) { e.preventDefault(); });
+        
+
+
+
+    /*------------------------------------------------------------------------------*/
+
+
+
+    
+
     /* Гугл карта */
     google_maps(); // Load google maps onload page
 
@@ -114,6 +144,8 @@ $(document).ready(function() {
         }); 
     };
 
+
+    
     
     
 });

@@ -625,9 +625,23 @@ h1{
 .colored{
 	color: #fbc115;
 }
+
+/* ---------------Схема залов --------------- */
 img[usemap] {
 	border: none;
 	height: auto;
 	max-width: 100%;
 	width: auto;
+}
+
+.rooms{
+	margin-top: 1.5em;
+}
+.rooms a{
+	display: block;
+	color: #fbc115;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 2;
 }
